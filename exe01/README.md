@@ -7,7 +7,7 @@ Desenvolva uma função que calcule a soma de dois números inteiros.
 Sua função deve receber dois números inteiros como parâmetro e retornar um número inteiro, seguindo o protótipo:
 
 ```c
-int somar(int n1, int n2);
+int somar(int n1, int n2);;
 ```
 
 As definições dos métodos devem ficar no arquivo `functions.h` e as implementações no arquivo `functions.c`.
