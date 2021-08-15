@@ -1,18 +1,38 @@
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <ctype.h>
 #include "functions.h"
 
-int main() {
+#define TAM_PALAVRA 200
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+int main()
+{
+  char palavra[TAM_PALAVRA];
+  bool flag;
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // Ler entrada
+  fgets(palavra, TAM_PALAVRA, stdin);
+  fflush(stdin);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  // ToUpper
+  for (int i = 0; i < strlen(palavra); i++)
+  {
+    palavra[i] = toupper(palavra[i]);
+  }
 
-  return(0);
+  // Verificar se palindromo
+  flag = is_palindromo(palavra, strlen(palavra));
+
+  // Imprimir resultado
+  if (flag)
+  {
+    printf("SIM");
+  }
+  else
+  {
+    printf("NAO");
+  }
+
+  return (0);
 }
