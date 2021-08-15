@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include "functions.h"
 
-int main() {
+int main()
+{
+  int base, expoente, pot;
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  // Ler entradas
+  scanf("%d %d", &base, &expoente);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // Calcular resultado
+  pot = potencia(base, expoente);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  // Imprimir resultado
+  printf("%d", pot);
 
-  return(0);
+  return 0;
 }

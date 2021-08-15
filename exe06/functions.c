@@ -1,7 +1,17 @@
-
 #include "functions.h"
 
-int somar(int n1, int n2){
+int potencia(int x, int n)
+{
+    int pot;
 
-    return n1+n2;
+    if (n == 1)
+    {
+        return x;
+    }
+    else
+    {
+        pot = x * potencia(x, --n);
+    }
+
+    return pot;
 }
