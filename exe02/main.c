@@ -24,5 +24,9 @@ int main()
   // Exibe resultado
   printf("MENOR = %d", m);
 
+  // Libera espaço
+  free(vet);
+  vet = NULL;
+
   return (0);
 }
