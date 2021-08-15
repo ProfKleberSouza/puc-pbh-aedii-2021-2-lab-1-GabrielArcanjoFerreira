@@ -1,7 +1,18 @@
-
 #include "functions.h"
 
-int somar(int n1, int n2){
+int menor(int v[], int n)
+{
+    int menor;
+    menor = v[0];
 
-    return n1+n2;
+    // Loop pelo vetor
+    for (int i = 1; i < n; i++)
+    {
+        if (v[i] < menor)
+        {
+            menor = v[i];
+        }
+    }
+
+    return menor;
 }
