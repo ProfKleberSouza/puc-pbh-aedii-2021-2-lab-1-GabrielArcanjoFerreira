@@ -1,18 +1,20 @@
 #include <stdio.h>
 #include "functions.h"
 
-int main() {
+#define TAM_TEXTO 500
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+int main()
+{
+  char texto[TAM_TEXTO];
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // Ler entrada
+  fgets(texto, TAM_TEXTO, stdin);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  // Gerar resultado
+  inverte(texto);
 
-  return(0);
+  // Imprimir resultado
+  printf("%s", texto);
+
+  return (0);
 }
