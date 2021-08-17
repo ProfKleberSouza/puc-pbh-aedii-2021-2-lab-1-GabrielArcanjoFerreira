@@ -1,18 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 #include "functions.h"
 
-int main() {
+int main()
+{
+  int m, n;
+  char *sequencia;
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  // Ler placar
+  scanf("%d %d", &m, &n);
+  sequencia = (char *)malloc((m + n) * sizeof(char));
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // Imprimir possibilidades
+  placar_possiveis(m, n, (m * n) + 1, sequencia);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+  return (0);
 }

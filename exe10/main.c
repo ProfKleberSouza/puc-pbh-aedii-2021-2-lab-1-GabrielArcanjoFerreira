@@ -1,18 +1,15 @@
 #include <stdio.h>
 #include "functions.h"
 
-int main() {
+int main()
+{
+  int d;
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  // Ler entrada
+  scanf("%d", &d);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // Gerar tabela verdar
+  tabela_verdade(d, 0);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
-  return(0);
+  return (0);
 }

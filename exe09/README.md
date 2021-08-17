@@ -1,4 +1,4 @@
-# Exercício - Função recursiva - Placar Possíveis
+# Exercício - Função recursiva - Placar Possíveisa
 
 Considere uma partida de futebol entre duas equipes A x B, cujo placar final seja $m$ x $n$, em que m e n são os némeros de gols marcados por A e B,
 respectivamente. Implemente um algoritmo recursivo que imprima todas as possíveis sucessões de gols marcados. Por exemplo, para um resultado
@@ -23,7 +23,7 @@ Os casos de testes devem seguir as definições para as estradas e saídas esper
 A entrada padrão deve receber dois números inteiros.
 
 ```
-3 1
+3 2
 ```
 
 ### Saída
@@ -31,8 +31,10 @@ A entrada padrão deve receber dois números inteiros.
 Imprima as combinações possíveis.
 
 ```
-AAAB
-AABA
-ABAA
-BAAA
+AAABB
+AABBA
+ABBAA
+BBAAA
+BAAAB
+
 ```
